@@ -17,7 +17,6 @@ const Navbar = () => {
   const { name } = state || {};
 
   console.log(googleClientId);
-  // test
 
   // !!name 값이 있는지 엄격히 체크
   const [isAuth, setIsAuth] = useState(!!name);
