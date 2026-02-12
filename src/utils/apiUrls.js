@@ -1,4 +1,4 @@
-const DOMAIN = 'http://18.208.194.250';
+const DOMAIN = 'https://backend.aiccmarshall.site';
 
 const GET_TASKS_API_URL = `${DOMAIN}/get_tasks`;
 const POST_TASK_API_URL = `${DOMAIN}/post_task`;
