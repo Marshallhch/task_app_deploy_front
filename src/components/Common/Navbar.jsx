@@ -16,6 +16,8 @@ const Navbar = () => {
   const state = useSelector((state) => state.auth.authData);
   const { name } = state || {};
 
+  console.log(googleClientId);
+
   // !!name 값이 있는지 엄격히 체크
   const [isAuth, setIsAuth] = useState(!!name);
 
@@ -29,7 +31,7 @@ const Navbar = () => {
         console.error('Google Login Error: ', error);
       }
     },
-    [dispatch]
+    [dispatch],
   );
 
   const handleLogoutClick = () => {
